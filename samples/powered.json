@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "config": {
+    "aircraft": {
+      "name": "RC-02 プロペラ機",
+      "kind": "powered",
+      "mass": 0.65,
+      "cg_mac": 0.3,
+      "iyy": 0.025,
+      "mass_mode": "manual",
+      "components": [
+        {
+          "name": "機体",
+          "mass": 0.48,
+          "x": 0.12,
+          "z": 0,
+          "iyy": 0.02
+        },
+        {
+          "name": "バッテリー",
+          "mass": 0.12,
+          "x": -0.05,
+          "z": 0.02,
+          "iyy": 0.0003
+        },
+        {
+          "name": "モーター",
+          "mass": 0.05,
+          "x": -0.22,
+          "z": 0,
+          "iyy": 0.0001
+        }
+      ],
+      "span": 1.2,
+      "root_chord": 0.21,
+      "taper": 1.0,
+      "airfoil_mode": "naca4",
+      "camber": 0.02,
+      "camber_position": 0.4,
+      "thickness": 0.12,
+      "incidence": 2.0,
+      "tail_area": 0.05,
+      "tail_span": 0.5,
+      "tail_arm": 0.5,
+      "tail_incidence": -0.6,
+      "elevator": 0.0,
+      "tail_efficiency": 0.9,
+      "zero_lift": -2.0,
+      "cm0": -0.04,
+      "cd0": 0.025,
+      "body_cda": 0.003,
+      "oswald": 0.8,
+      "cl_max": 1.15,
+      "thrust_mode": "curve",
+      "thrust": 3.0,
+      "throttle": 0.65,
+      "thrust_curve": [
+        [
+          0,
+          4.0
+        ],
+        [
+          10,
+          2.8
+        ],
+        [
+          20,
+          0.8
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "thrust_z": 0.0,
+      "thrust_angle": 0.0
+    },
+    "conditions": {
+      "speed": 11,
+      "height": 10,
+      "launch_angle": 3,
+      "pitch": 3,
+      "pitch_rate": 0.0,
+      "wind": 0.0,
+      "density": 1.225,
+      "temperature": 15.0
+    },
+    "solver": {
+      "duration": 20.0,
+      "sample_dt": 0.05,
+      "max_step": 0.02,
+      "rtol": 1e-07,
+      "atol": 1e-09
+    }
+  }
+}

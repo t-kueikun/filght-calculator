@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "config": {
+    "aircraft": {
+      "name": "GL-01 手投げグライダー",
+      "kind": "glider",
+      "mass": 0.32,
+      "cg_mac": 0.3,
+      "iyy": 0.008,
+      "mass_mode": "manual",
+      "components": [
+        {
+          "name": "主翼",
+          "mass": 0.15,
+          "x": 0.07,
+          "z": 0,
+          "iyy": 0.0005
+        },
+        {
+          "name": "胴体",
+          "mass": 0.12,
+          "x": 0.1,
+          "z": 0.01,
+          "iyy": 0.004
+        },
+        {
+          "name": "尾翼",
+          "mass": 0.03,
+          "x": 0.465,
+          "z": 0,
+          "iyy": 0.0001
+        },
+        {
+          "name": "機首ウェイト",
+          "mass": 0.02,
+          "x": -0.15,
+          "z": 0,
+          "iyy": 1e-05
+        }
+      ],
+      "span": 1.0,
+      "root_chord": 0.18,
+      "taper": 1.0,
+      "airfoil_mode": "naca4",
+      "camber": 0.02,
+      "camber_position": 0.4,
+      "thickness": 0.12,
+      "incidence": 2.0,
+      "tail_area": 0.035,
+      "tail_span": 0.4,
+      "tail_arm": 0.42,
+      "tail_incidence": -0.8,
+      "elevator": 0.0,
+      "tail_efficiency": 0.9,
+      "zero_lift": -2.0,
+      "cm0": -0.04,
+      "cd0": 0.025,
+      "body_cda": 0.002,
+      "oswald": 0.8,
+      "cl_max": 1.15,
+      "thrust_mode": "curve",
+      "thrust": 3.0,
+      "throttle": 0.65,
+      "thrust_curve": [
+        [
+          0,
+          4.0
+        ],
+        [
+          10,
+          2.8
+        ],
+        [
+          20,
+          0.8
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "thrust_z": 0.0,
+      "thrust_angle": 0.0
+    },
+    "conditions": {
+      "speed": 9.0,
+      "height": 1.8,
+      "launch_angle": 3.0,
+      "pitch": 3.0,
+      "pitch_rate": 0.0,
+      "wind": 0.0,
+      "density": 1.225,
+      "temperature": 15.0
+    },
+    "solver": {
+      "duration": 20.0,
+      "sample_dt": 0.05,
+      "max_step": 0.02,
+      "rtol": 1e-07,
+      "atol": 1e-09
+    }
+  }
+}

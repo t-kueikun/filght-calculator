@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aeroflight"
+version = "0.2.0"
+description = "Longitudinal flight simulator for small printed aircraft"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "scipy>=1.11,<2", "fastapi>=0.115,<1", "uvicorn>=0.30,<1", "pydantic>=2.9,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10", "httpx>=0.27,<1"]
+
+[tool.setuptools.packages.find]
+include = ["aeroflight*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

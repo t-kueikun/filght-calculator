@@ -1,0 +1,10 @@
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+*.tsbuildinfo
+frontend/test-results/
+frontend/playwright-report/
+*.zip
