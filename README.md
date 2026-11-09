@@ -209,3 +209,4 @@ frontend/tests/          Playwright実ブラウザ試験
 frontend/dist/           配布用ビルド済みUI
 run.py                   ローカル起動
 ```
+# filght-calculator
