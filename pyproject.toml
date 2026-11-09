@@ -18,3 +18,5 @@ include = ["aeroflight*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
+[tool.vercel]
+entrypoint = "aeroflight.api:app"
